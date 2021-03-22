@@ -1,0 +1,103 @@
+nav {
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 200px;
+}
+
+.nav {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.nav .logo {
+    width: 10%;
+    margin: 30px 5px;
+}
+
+.nav .menuList {
+    width: 70%;
+    /* background: rgb(190, 187, 187); */
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .menuList .menuItem {
+    background-color: rgba(0, 0, 0, 0);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.nav .menuList .menuItem a {
+    color: #506690;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav .menuList .menuItem a:hover {
+    color: #335eea;
+}
+
+.nav .btnBuy {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .btnBuy a {
+    /* padding: 9px 16px; */
+    padding: 0.5625rem 1rem;
+    background: #335eea;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: none;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+.nav .btnBuy a:hover {
+    background: #1746e0;
+    transform: translateY(-6px);
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* default */
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    .nav .menuList {
+        display: none;
+    }
+    .nav .btnBuy {
+        display: none;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
