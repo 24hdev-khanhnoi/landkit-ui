@@ -1,9 +1,5 @@
 nav {
-    padding-left: 40px;
-    padding-right: 40px;
     min-height: 200px;
-    max-width: 1040px;
-    margin: auto;
 }
 
 .nav {
@@ -120,8 +116,8 @@ nav {
 /* landingItem */
 
 .nav .menuList .menuItem#menuId1 .dropdownItem {
-    width: 800px;
-    height: 350px;
+    min-width: 600px;
+    min-height: 320px;
     background: #fff;
 }
 
@@ -130,7 +126,7 @@ nav {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    height: 400px;
+    height: 320px;
     position: relative;
     z-index: 10;
     color: #fff;
