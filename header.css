@@ -1,7 +1,9 @@
 nav {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
     min-height: 200px;
+    max-width: 1040px;
+    margin: auto;
 }
 
 .nav {
@@ -30,6 +32,9 @@ nav {
     background-color: rgba(0, 0, 0, 0);
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav .menuList .menuItem a {
@@ -41,6 +46,110 @@ nav {
 .nav .menuList .menuItem a:hover {
     color: #335eea;
 }
+
+.nav .menuList .menuItem .dropdownItem {
+    /* display: none; */
+    display: block;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    z-index: -1;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.nav .menuList .menuItem .dropdownItem .dropdownItem_Child {}
+
+.nav .menuList .menuItem:hover .dropdownItem {
+    display: block;
+    transform: translate(-50%, 0);
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+/* css list menu */
+
+
+/* landingItem */
+
+.nav .menuList .menuItem#menuId1 .dropdownItem {
+    width: 800px;
+    height: 350px;
+    background: #fff;
+}
+
+.landingItem_left {
+    background-image: url(https://landkit.goodthemes.co/assets/img/photos/photo-3.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    padding: 40px 35px;
+}
+
+.landingItem_left:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(51, 94, 234, 0.8);
+    border-radius: inherit;
+    z-index: 20;
+}
+
+.menuItem .landingItem .landingItem_left .landingItem_left_btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px 0;
+    display: block;
+    width: 160px;
+    text-align: center;
+    color: rgb(51, 94, 234);
+}
+
+.menuItem .landingItem .landingItem_left .landingItem_left_btn:hover {
+    color: rgb(7, 53, 204);
+}
+
+.menuItem .landingItem .landingItem_right .landingItem_right_title {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(7, 53, 204);
+}
+
+.menuItem .landingItem .landingItem_right .landingItem_right_link {
+    padding: 0.4em 0;
+    clear: both;
+    font-weight: 400;
+    color: #506690;
+    /* text-align: inherit;
+    white-space: nowrap; */
+    background-color: transparent;
+    border: 0;
+}
+
+.menuItem .landingItem .landingItem_right .landingItem_right_link span {
+    color: #1746e0;
+}
+
+
+/* End landingItem */
+
+
+/* End css list menu */
 
 .nav .btnBuy {
     width: 20%;
@@ -68,11 +177,38 @@ nav {
     transform: translateY(-6px);
 }
 
+.btnNavWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.btnNavWrapper .btnNavIcon {
+    /* background: #506690; */
+    padding: 5px;
+    /* border: thin solid #000; */
+    cursor: pointer;
+}
+
+.btnNavWrapper .btnNavIcon div {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.644);
+    margin: 6px 0;
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
     /* default */
+}
+
+@media only screen and (min-width: 993px) {
+    .btnNavWrapper {
+        display: none;
+    }
 }
 
 

@@ -1,0 +1,4 @@
+.banner {
+    min-height: calc(100vh - 200px);
+    background: rgb(209, 207, 207);
+}

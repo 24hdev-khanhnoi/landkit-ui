@@ -8,6 +8,7 @@
     <title>Landkit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="banner.css">
 </head>
 
 <body>
@@ -22,8 +23,55 @@
             <!-- Nav large laptops and desktops -->
             <div class="menuList">
                 <!-- menuList -->
-                <div class="menuItem">
+                <div class="menuItem" id="menuId1">
                     <a href="#"> Landings</a>
+                    <!-- dropdownItem `1 -->
+                    <div class="dropdownItem landingItem border-left border-right box-shadow">
+                        <div class="row ">
+                            <div class="dropdownItem_Child col-6 landingItem_left ">
+                                <div class="div-on-bg landing">
+                                    <h3>
+                                        Want to see an overview?
+                                    </h3>
+                                    <p>
+                                        See all the pages at once.
+                                    </p>
+
+                                    <a href="#" class="landingItem_left_btn bg-white border-right border-left">View all pages</a>
+                                </div>
+
+                            </div>
+                            <div class="dropdownItem_Child col-6 landingItem_right ">
+                                <div class="row">
+                                    <div class="col-5 pt-1 pl-2 mb-1 flex-col">
+                                        <h6 class="landingItem_right_title mt-2">Services</h6>
+                                        <a href="#" class="landingItem_right_link">Coworking</a>
+                                        <a href="#" class="landingItem_right_link">Rental</a>
+                                        <a href="#" class="landingItem_right_link">Job Listing</a>
+
+                                        <h6 class="landingItem_right_title mt-2">Apps</h6>
+                                        <a href="#" class="landingItem_right_link">Desktop</a>
+                                        <a href="#" class="landingItem_right_link">Mobile</a>
+                                    </div>
+                                    <div class="col-7 pt-1 pl-2 mb-1 flex-col">
+                                        <h6 class="landingItem_right_title mt-2">WEB</h6>
+                                        <a href="#" class="landingItem_right_link">Basic</a>
+                                        <a href="#" class="landingItem_right_link">Startup</a>
+                                        <a href="#" class="landingItem_right_link">Enterprise</a>
+                                        <a href="#" class="landingItem_right_link">Service</a>
+                                        <a href="#" class="landingItem_right_link">Cloud Hosting</a>
+                                        <a href="#" class="landingItem_right_link">Agency</a>
+                                        <a href="#" class="landingItem_right_link">Framework
+                                            ( <span class="text-blue">New</span> )
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End dropdownItem `1 -->
 
                 </div>
                 <div class="menuItem">
@@ -44,8 +92,21 @@
                 <a href="#"> Buy now</a>
             </div>
             <!-- EndNav large laptops and desktops -->
+
+            <!-- Nav small devices (phones, 600px and down) -->
+            <div class="btnNavWrapper">
+                <div class="btnNavIcon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+            <!-- EndNav small devices (phones, 600px and down) -->
         </div>
     </nav>
+
+    <div class="banner"></div>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+/* index img bg -> 10 */
+
 @font-face {
     font-family: HKGrotesk;
     src: url("font/hk-grotesk.regular-legacy.otf") format("opentype");
@@ -12,8 +14,144 @@
     margin: 0;
     padding: 0;
     font-family: HKGroteskPro, serif;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+}
+
+
+/* grid */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-12 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-4 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+.col-8 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 66%;
+    max-width: 66%;
+}
+
+.col-5 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 41%;
+    max-width: 41%;
+}
+
+.col-7 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 59%;
+    max-width: 59%;
+}
+
+
+/* end grid */
+
+
+/* common css class */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.show {
+    display: block;
+}
+
+.div-on-bg {
+    position: relative;
+    z-index: 100;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-blue {
+    color: #1746e0;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.block {
+    display: block;
+}
+
+.border-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.border-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pt-1 {
+    padding-top: 15px;
+}
+
+.pl-1 {
+    padding-left: 15px;
+}
+
+.pl-2 {
+    padding-left: 30px;
+}
+
+.mt-2 {
+    margin-top: 30px;
+}
+
+.mb-1 {
+    margin-bottom: 15px;
+}
+
+.mb-2 {
+    margin-bottom: 30px;
+}
+
+.box-shadow {
+    box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 15%);
 }
