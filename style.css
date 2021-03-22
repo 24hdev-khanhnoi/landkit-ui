@@ -245,3 +245,16 @@ a {
     opacity: 1 !important;
     z-index: 9999 !important;
 } */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    /* 6 to 12 */
+    .col-6 {
+        flex-wrap: wrap;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

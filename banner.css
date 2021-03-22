@@ -10,19 +10,19 @@
 .bannerView h1 {
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-align: left !important;
+    text-align: left;
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 .bannerView h1 span {
-    color: #335eea !important;
+    color: #335eea;
 }
 
 .bannerView p {
     color: #869ab8;
-    text-align: left !important;
+    text-align: left;
     font-size: 1.3125rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -70,4 +70,31 @@
 
 .bannerImage img {
     width: 100%;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    .banner .row {
+        flex-direction: column-reverse;
+    }
+    .bannerView h1 {
+        text-align: center;
+    }
+    .bannerView p {
+        text-align: center;
+    }
+    .bannerImage {
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bannerView h1 {
+        font-size: 2.25rem;
+    }
+    .bannerView p {
+        font-size: 1.1875rem;
+    }
 }
