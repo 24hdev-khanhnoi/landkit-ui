@@ -85,6 +85,9 @@
     .bannerView p {
         text-align: center;
     }
+    .bannerView_wrapperBtn {
+        justify-content: center;
+    }
     .bannerImage {
         margin-bottom: 2em;
     }
