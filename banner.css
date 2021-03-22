@@ -1,4 +1,73 @@
 .banner {
     min-height: calc(100vh - 200px);
-    background: rgb(209, 207, 207);
+    /* background: rgb(209, 207, 207); */
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.bannerView h1 {
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: left !important;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.bannerView h1 span {
+    color: #335eea !important;
+}
+
+.bannerView p {
+    color: #869ab8;
+    text-align: left !important;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.bannerView_wrapperBtn {
+    display: flex;
+}
+
+.btnView {
+    display: flex;
+    margin-right: 0.3rem;
+    color: #fff;
+    background-color: #335eea;
+    transition: 0.5s;
+}
+
+.btnView:hover {
+    background-color: #1746e0;
+    transform: translate3d(0, -3px, 0);
+}
+
+.btnView span {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnView span svg {
+    width: 1em;
+    height: 1em;
+    filter: invert(1);
+}
+
+.btnDoc {
+    background-color: rgba(47, 87, 218, 0.1);
+    color: #335eea;
+    transition: 0.5s;
+}
+
+.btnDoc:hover {
+    transform: translate3d(0, -5px, 0);
+}
+
+.bannerImage img {
+    width: 100%;
 }
