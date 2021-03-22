@@ -235,9 +235,58 @@ nav {
 /* Documentation Item */
 
 .nav .menuList .menuItem#menuId4 .dropdownItem {
-    min-width: 300px;
+    min-width: 370px;
     min-height: 200px;
     background: #fff;
+}
+
+.documentationItem_child {
+    display: flex;
+    cursor: pointer;
+}
+
+.menuItemIcon {
+    padding: 0px 10px;
+}
+
+.menuItemIcon>svg {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.menuItemIconLink {
+    margin-right: 20px;
+}
+
+.menuItemIconLink h6 {
+    letter-spacing: 0.08em;
+    color: #335eea;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.menuItemIconLink p {
+    color: #506690;
+    font-size: .9375rem!;
+    font-weight: 400;
+}
+
+.menuItemIconVer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItemIconVer>span {
+    background-color: rgba(51, 94, 234, 0.1);
+    color: #335eea;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    border-radius: 10rem;
+    font-size: 75%;
 }
 
 
