@@ -1,6 +1,9 @@
-    .about {
+.about {
     padding-bottom: 3em;
 }
+
+
+/* aboutHead */
 
 .aboutFormWrapper {
     padding-right: 6em;
@@ -118,7 +121,124 @@
     text-align: left;
 }
 
+
+/* End aboutHead */
+
+
+/* aboutBelow */
+
+
+/* aboutBelowInfo */
+
+.aboutBelow {
+    padding-top: 3em;
+}
+
+.aboutBelow_info {
+    padding-top: 4.5em;
+}
+
+.aboutBelow_info h2 {
+    font-size: 1.9375rem;
+    font-weight: 400;
+    color: rgb(22, 28, 45) #161c2d;
+    letter-spacing: -0.31px;
+    line-height: 37.85px;
+    margin-bottom: 0.6em;
+    text-align: left;
+    margin-right: 2em;
+}
+
+.aboutBelow_info h2 span {
+    color: #335eea;
+}
+
+.aboutBelow_info p {
+    font-size: 1.3rem;
+    color: #869ab8;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.aboutBelowItem {
+    display: flex;
+}
+
+.aboutBelowItem_icon {
+    margin-right: 1.5em;
+}
+
+.aboutBelowItem_icon svg {
+    width: 3em;
+    height: 3em;
+}
+
+.aboutBelowItem_text h2 {
+    font-size: 1.3rem;
+    color: rgb(22, 28, 45);
+    margin-bottom: 0em;
+}
+
+.aboutBelowItem_text p {
+    font-size: 1.0625rem;
+}
+
+
+/* End aboutBelowInfo */
+
+
+/* aboutBelowImg */
+
+.aboutBelow_img {
+    /* width: 100%; */
+    padding-left: 2em;
+    padding-top: 5em;
+    position: relative;
+    z-index: 1000;
+}
+
+.aboutBelow_img img {
+    width: 600px;
+    border-radius: 0.625rem;
+    box-shadow: 25px 60px 125px -25px rgb(80 102 144 / 10%), 16px 40px 75px -40px rgb(0 0 0 / 20%);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(333deg) rotateX(22deg);
+}
+
+.aboutBelow_img_bg {
+    position: absolute;
+    top: 186px;
+    left: -52px;
+    /* background: #000; */
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    color: #f0f3f7;
+}
+
+
+/* End aboutBelowImg */
+
+
+/* End aboutBelow */
+
 @media only screen and (max-width: 768px) {
     .aboutFormWrapper {
         padding-right: 0em;
     }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    .aboutBelow_img img {
+        width: 400px;
+    }
+    .aboutBelow_img_bg {
+        width: 70%;
+        left: -21px;
+    }
+}
