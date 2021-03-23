@@ -63,7 +63,7 @@
 .aboutInfo h2 {
     font-size: 1.9375rem;
     font-weight: 400;
-    color: rgb(22, 28, 45) #161c2d;
+    color: #161c2d;
     letter-spacing: -0.31px;
     line-height: 37.85px;
     margin-bottom: 0.9em;
@@ -192,19 +192,25 @@
 /* aboutBelowImg */
 
 .aboutBelow_img {
-    /* width: 100%; */
     padding-left: 2em;
     padding-top: 5em;
     position: relative;
     z-index: 1000;
+    /* overflow: hidden; */
 }
 
 .aboutBelow_img img {
-    width: 600px;
+    /* width: 600px; */
+    width: 80%;
     border-radius: 0.625rem;
     box-shadow: 25px 60px 125px -25px rgb(80 102 144 / 10%), 16px 40px 75px -40px rgb(0 0 0 / 20%);
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(333deg) rotateX(22deg);
+    backface-visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .aboutBelow_img_bg {

@@ -34,8 +34,8 @@ a {
 /* grid */
 
 .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
     max-width: 1040px;
     margin: auto;
 }
@@ -116,6 +116,10 @@ a {
 
 .d-flex {
     display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .flex-col {
@@ -225,6 +229,26 @@ a {
 
 .box-shadow {
     box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 15%);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.reverse_svg svg {
+    transform: rotate(180deg) !important;
 }
 
 
