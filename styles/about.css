@@ -1,0 +1,124 @@
+    .about {
+    padding-bottom: 3em;
+}
+
+.aboutFormWrapper {
+    padding-right: 6em;
+}
+
+.aboutForm {
+    width: 100%;
+    /* padding-right: 4em; */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.aboutForm:hover {
+    transform: translateY(-8px);
+}
+
+.aboutForm_img {
+    background: url(https://landkit.goodthemes.co/assets/img/photos/photo-2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 240px;
+}
+
+.aboutForm_types {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.aboutForm_types_btn {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.aboutForm_types_btn button {
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #42ba96;
+    border-color: #42ba96;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.aboutForm_types_btn button:hover {
+    transform: translateY(-8px);
+    background-color: #389e7f;
+}
+
+.aboutInfo {
+    padding-top: 20%;
+}
+
+.aboutInfo h2 {
+    font-size: 1.9375rem;
+    font-weight: 400;
+    color: rgb(22, 28, 45) #161c2d;
+    letter-spacing: -0.31px;
+    line-height: 37.85px;
+    margin-bottom: 0.9em;
+    text-align: left;
+}
+
+.aboutInfo h2 span {
+    color: #42ba96;
+}
+
+.aboutInfo p {
+    font-size: 1.15rem;
+    color: #869ab8;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.aboutItem {
+    display: flex;
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 1em;
+}
+
+.aboutItem_icon {
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    background-color: rgba(66, 186, 150, 0.1);
+    color: #42ba96;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-right: 1em;
+    padding-left: 0.24em;
+}
+
+.aboutItem_icon svg {
+    width: 0.6em;
+    height: 0.6em;
+}
+
+.aboutInfo .aboutItem p {
+    margin-bottom: 0;
+    color: #42ba96;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutFormWrapper {
+        padding-right: 0em;
+    }
