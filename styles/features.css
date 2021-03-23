@@ -1,4 +1,37 @@
 .features {
-    min-height: calc(100vh - 200px);
     padding-top: 30px;
+}
+
+.feature {
+    margin-bottom: 2em;
+    padding-right: 1em;
+    min-height: 230px;
+}
+
+.feature_icon svg {
+    width: 3em;
+    height: 3em;
+}
+
+.feature_title h6 {
+    line-height: 1.4;
+    font-size: 1.3125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: rgb(22, 28, 45);
+}
+
+.feature_title p {
+    color: #869ab8;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    .feature {
+        padding-right: 0;
+    }
 }

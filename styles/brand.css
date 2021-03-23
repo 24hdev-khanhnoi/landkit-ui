@@ -1,0 +1,32 @@
+.brands {
+    padding-bottom: 3em;
+}
+
+.brand {
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+.brand_icon {
+    color: #869ab8;
+    max-width: 100%;
+    height: auto;
+}
+
+.brand_icon svg {
+    width: 90%;
+}
+
+
+/* .brand_icon svg {
+    opacity: 50%;
+} */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    .brand {
+        padding-right: 0;
+    }
+}

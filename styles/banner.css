@@ -1,5 +1,6 @@
 .banner {
-    min-height: calc(100vh - 200px);
+    /* min-height: calc(100vh - 200px); */
+    padding-bottom: 3em;
 }
 
 .bannerView h1 {
