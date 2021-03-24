@@ -216,6 +216,7 @@
     }
     .testimonialBelow_content {
         width: 100%;
+        padding-bottom: 2em;
     }
     .cardTestimonial_prevNext-left {
         top: calc(600px * 3 / 4);

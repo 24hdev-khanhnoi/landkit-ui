@@ -19,10 +19,13 @@
 
 .stats {
     padding-top: 10em;
+    padding-bottom: 1em;
     background: #eff2f6;
 }
 
-.statText {}
+.statText {
+    padding-top: 2em;
+}
 
 .statText h2 {
     font-size: 1.9rem;
@@ -46,6 +49,47 @@
     text-align: left;
 }
 
+.statText_items {
+    display: flex;
+}
+
+.statText_item {
+    width: 33%;
+}
+
+.statText_item-brick {
+    position: relative;
+}
+
+.statText_item-brick::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #d9e2ef;
+    position: absolute;
+    top: 0;
+    right: 28%;
+}
+
+.statText_item h2 {
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.21px;
+    line-height: 29.4px;
+    text-align: left;
+    text-size-adjust: 100%;
+    color: #161c2d;
+}
+
+.statText_item p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    text-size-adjust: 100%;
+    color: #161c2d;
+}
+
 .statImg img {
     width: 100%;
 }
@@ -53,4 +97,8 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .stats .row {
+        flex-direction: column-reverse;
+    }
+}
