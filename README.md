@@ -8,6 +8,6 @@
 # Problem :
 
 - Have not done the label effect of the form, not yet
-- Have 1 bug in About UI (aboutBelow_img)
+- Have 1 bug in About UI (aboutBelow_img) (Fix Done)
 
 p/s: Ảnh trang ở dạng link gốc

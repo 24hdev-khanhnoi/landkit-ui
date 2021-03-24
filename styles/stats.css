@@ -1,14 +1,12 @@
 .wrappterStats {
     width: 100%;
-    /* padding-top: 20em; */
     position: relative;
     background: #eff2f6;
-    /* top: -20em; */
     z-index: 10;
-    /* relate to testinonial bg */
 }
 
-.wrappterStats::before {
+
+/* .wrappterStats::before {
     content: "";
     position: absolute;
     top: 270px;
@@ -17,9 +15,7 @@
     right: 0;
     background: #eff2f6;
     z-index: -10;
-    /* width: 60%; */
-    /* transform: rotate(340deg) translateX(100%); */
-}
+} */
 
 .stats {
     padding-top: 10em;
@@ -53,3 +49,8 @@
 .statImg img {
     width: 100%;
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {}

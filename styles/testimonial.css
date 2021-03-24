@@ -8,7 +8,7 @@
     color: red;
     color: #eff2f6;
     position: relative;
-    top: -204px;
+    top: -230px;
 }
 
 .testimonials_bg_svg {
@@ -26,7 +26,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: scale(1.9) translateX(317px);
+    transform: scale(1) translateX(0);
+    width: 2215px;
 }
 
 
@@ -188,7 +189,7 @@
 /* End custom and fix */
 
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
-    .testimonialBelow {
+    .testimonials .row {
         padding-left: 1em;
         padding-right: 1em;
     }
@@ -218,12 +219,12 @@
     }
     .cardTestimonial_prevNext-left {
         top: calc(600px * 3 / 4);
-        left: -33px;
+        left: -26px;
         transform: translateY(-50%);
     }
     .cardTestimonial_prevNext-right {
         top: calc(600px * 3 / 4);
-        right: -33px;
+        right: -26px;
         transform: translateY(-50%);
     }
     .testimonialBelow_img {
@@ -241,6 +242,11 @@
         border: thin solid rgb(240, 233, 233);
     }
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
