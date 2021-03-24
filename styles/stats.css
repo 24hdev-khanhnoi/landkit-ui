@@ -1,0 +1,55 @@
+.wrappterStats {
+    width: 100%;
+    /* padding-top: 20em; */
+    position: relative;
+    background: #eff2f6;
+    /* top: -20em; */
+    z-index: 10;
+    /* relate to testinonial bg */
+}
+
+.wrappterStats::before {
+    content: "";
+    position: absolute;
+    top: 270px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #eff2f6;
+    z-index: -10;
+    /* width: 60%; */
+    /* transform: rotate(340deg) translateX(100%); */
+}
+
+.stats {
+    padding-top: 10em;
+    background: #eff2f6;
+}
+
+.statText {}
+
+.statText h2 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #161c2d;
+    letter-spacing: -0.31px;
+    line-height: 37.85px;
+    margin-bottom: 0.9em;
+}
+
+.statText h2 span {
+    color: #335eea;
+}
+
+.statText p {
+    font-size: 1.2rem;
+    color: #869ab8;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.statImg img {
+    width: 100%;
+}
