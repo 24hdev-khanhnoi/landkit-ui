@@ -30,14 +30,26 @@ a {
     box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
 }
 
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
 
 /* grid */
 
 .container {
-    /* padding-left: 40px;
-    padding-right: 40px; */
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 1040px;
     margin: auto;
+}
+
+.container-fluid {
+    width: 100%;
 }
 
 .row {
@@ -139,6 +151,11 @@ a {
 .div-on-bg {
     position: relative;
     z-index: 100;
+}
+
+.not-necessary {
+    position: relative;
+    z-index: -10;
 }
 
 .text-white {
@@ -371,3 +388,12 @@ a {
     opacity: 1 !important;
     z-index: 9999 !important;
 } */
+
+
+/* body {
+    background: #000;
+} */
+
+.testimonials {
+    display: none;
+}

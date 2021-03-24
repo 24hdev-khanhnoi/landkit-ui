@@ -1,5 +1,5 @@
 .about {
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
 }
 
 
@@ -192,35 +192,32 @@
 /* aboutBelowImg */
 
 .aboutBelow_img {
-    padding-left: 2em;
-    padding-top: 5em;
     position: relative;
     z-index: 1000;
-    /* overflow: hidden; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutBelow_img img {
-    /* width: 600px; */
+    display: block;
     width: 80%;
     border-radius: 0.625rem;
     box-shadow: 25px 60px 125px -25px rgb(80 102 144 / 10%), 16px 40px 75px -40px rgb(0 0 0 / 20%);
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(333deg) rotateX(22deg);
     backface-visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
 }
 
 .aboutBelow_img_bg {
     position: absolute;
-    top: 186px;
+    top: 300px;
     left: -52px;
     /* background: #000; */
     z-index: -1;
     height: 100%;
-    width: 100%;
+    width: 33%;
     color: #f0f3f7;
 }
 
@@ -229,6 +226,35 @@
 
 
 /* End aboutBelow */
+
+
+/* custom and fix */
+
+.aboutBelow_info {
+    position: relative;
+    z-index: 100;
+}
+
+.aboutBelow-img {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.aboutBelow-img-col {
+    min-height: 460px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .aboutBelow_img {
+        padding-top: 3em;
+    }
+}
+
+
+/* end custom and fix */
 
 @media only screen and (max-width: 768px) {
     .aboutFormWrapper {
@@ -240,11 +266,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (max-width: 992px) {
-    .aboutBelow_img img {
-        width: 400px;
-    }
     .aboutBelow_img_bg {
-        width: 70%;
         left: -21px;
     }
 }
