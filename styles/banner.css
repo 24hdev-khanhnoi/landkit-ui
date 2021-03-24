@@ -68,6 +68,18 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 320px) {
+    .bannerView_wrapperBtn {
+        flex-direction: column;
+    }
+    .bannerView_wrapperBtn .btn {
+        text-align: center;
+    }
+    .bannerView_wrapperBtn .btnView {
+        padding-left: 4.2em;
+    }
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 

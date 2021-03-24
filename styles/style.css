@@ -42,8 +42,8 @@ a {
 /* grid */
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
     max-width: 1040px;
     margin: auto;
 }
@@ -394,6 +394,7 @@ a {
     background: #000;
 } */
 
-.testimonials {
+
+/* .testimonials {
     display: none;
-}
+} */
