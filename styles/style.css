@@ -1,5 +1,8 @@
 /* index img bg -> 10 */
 
+
+/* index text -> 1000 */
+
 @font-face {
     font-family: HKGrotesk;
     src: url("font/hk-grotesk.regular-legacy.otf") format("opentype");
@@ -245,6 +248,10 @@ a {
 }
 
 .box-shadow {
+    box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 15%);
+}
+
+.box-shadow-right {
     box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 15%);
 }
 

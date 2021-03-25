@@ -5,6 +5,7 @@
 - 22/3 : Done UI HeaderNav ( responsive done) and Done UI Banner ( responsive done) and FEATURES (10%)
 - 23/3 : Done UI FEATURES, Brands, About, Testimonial ( responsive done)
 - 24/3 : Fix Bugs UI, Done UI STATS , UI PRICING (10%)
+- 25/3 : Done UI PRICING ( responsive done)
 
 # Problem :
 
