@@ -1,0 +1,89 @@
+.footer {
+    background: #f1f4f8;
+    /* background: #001d42; */
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
+
+.footerLeft {
+    padding-bottom: 2em;
+}
+
+.footerLeft_logo {
+    margin-bottom: 1em;
+}
+
+.footerLeft_text p {
+    color: #506690;
+    margin-bottom: 0.5rem;
+    font-family: HKGroteskPro, serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.footerLeft_icons {
+    display: flex;
+}
+
+.footerLeft_icon {
+    margin-right: 1em;
+}
+
+.footerRight {}
+
+.footerRight_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerRight_item h2 {
+    letter-spacing: 0.08em;
+    color: #506690;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2.55;
+    font-size: 0.75rem;
+}
+
+.footerRight_item a {
+    color: inherit;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 2;
+    color: rgb(134, 154, 184);
+}
+
+.footerRight_item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    /* col 3 to col 6 */
+    .footer .footerRight .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* col 3 to col 6 */
+    /* .footer .footer .footerRight .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    } */
+    /* col 9 to col 12 */
+    .footer .footerRight .col-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* col 3 Left to col 12 */
+    .footer .footerLeft {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

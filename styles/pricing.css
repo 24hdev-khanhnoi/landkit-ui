@@ -315,8 +315,8 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
 .pricingCard_text p {
     color: #869ab8;
     text-align: center;
-    margin-top: 5em;
-    margin-bottom: 8rem;
+    margin-top: 3em;
+    margin-bottom: 7rem;
     font-size: 1.3em;
     line-height: 1.6em;
 }
@@ -345,6 +345,7 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     height: 400px;
     position: relative;
     margin-top: -20em;
+    background: #1b294c;
 }
 
 .pricingBg_after {
@@ -354,6 +355,7 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     width: 100%;
     z-index: 1;
     overflow: hidden;
+    background: #eef1f5;
 }
 
 .pricingBg_after svg {
@@ -368,9 +370,9 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     top: 16px;
     left: 0;
     width: 100%;
-    height: 63em;
+    /* min-height: 63em; */
     z-index: 1;
-    background: #1b2a4e;
+    /* background: #1b2a4e; */
 }
 
 
@@ -384,6 +386,8 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
 
 .pricingBelow {
     color: #fff;
+    background: #1b2a4e;
+    /* padding-bottom: 3em; */
 }
 
 .pricingBelow_item {
@@ -466,6 +470,12 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
 .pricingBelow_cta a {
     color: #fff;
     background-color: #42ba96;
+    transition: 0.5s;
+}
+
+.pricingBelow_cta a:hover {
+    background-color: #389e7f;
+    transform: translateY(-8px);
 }
 
 .pricingBelow_cta a span {
@@ -494,6 +504,7 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     width: 100%;
     z-index: 1;
     overflow: hidden;
+    background: #1b2a4e;
 }
 
 .pricingBelowBg_after svg {
@@ -501,10 +512,28 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     transform: scale(2);
     color: #f1f4f8;
     transform-origin: top center;
+    /* color: red; */
 }
 
 
 /* end bg2 */
+
+
+/* fix and custom */
+
+.pricingBg_after::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    z-index: 1000;
+}
+
+
+/* End fix and custom */
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -516,7 +545,21 @@ input[type="checkbox"].ios8-switch-sm:checked+label:after {
     .pricingCard_btn-gray a {
         border-bottom-left-radius: 0.375rem;
     }
+    .pricingCard_text p {
+        margin-top: 1em;
+        margin-bottom: 4rem;
+        font-size: 1.1em;
+    }
     .pricingBg_below {
-        height: 87em !important;
+        /* height: 87em !important; */
+    }
+    .pricingBg_below {
+        /* height: calc(66em + 0px); */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pricingBg_below {
+        /* height: calc(66em); */
     }
 }

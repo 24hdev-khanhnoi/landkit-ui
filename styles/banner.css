@@ -26,6 +26,7 @@
 
 .bannerView_wrapperBtn {
     display: flex;
+    flex-wrap: wrap`;
 }
 
 .btnView {
