@@ -361,6 +361,141 @@ nav {
 /* end btnNav */
 
 
+/* menuList-small */
+
+.menuList-small {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    height: auto;
+    max-height: calc(100% - 2rem) !important;
+    width: calc(100% - 2rem) !important;
+    background: #fff;
+    border-radius: 0.375rem;
+    box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 15%);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    /* hide */
+    opacity: 0;
+    opacity: 1;
+    width: 0;
+    height: 0;
+    /* background: rgb(202, 197, 197); */
+    transition: 0.3s;
+}
+
+.btnCloseMenu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 8px;
+    display: none;
+}
+
+.btnCloseMenu {
+    margin-left: auto;
+}
+
+.btnCloseMenu svg {
+    width: 1em;
+    height: 1em;
+    filter: invert(70%);
+}
+
+.menuSmallItem {
+    margin-bottom: 1em;
+}
+
+.menuSmallItem_title {
+    display: flex;
+    width: 100%;
+}
+
+.menuSmallItem_title h1 {
+    /* margin-bottom: 1rem; */
+    color: #506690;
+    color: #506690;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.menuSmallItem_half {
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuSmallItem_half h2 {
+    padding-top: 1em;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #335eea;
+    white-space: nowrap;
+}
+
+.menuSmallItem_half a {
+    padding: 0.4em 0;
+    clear: both;
+    font-weight: 400;
+    color: #506690;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.menuSmallItem_half a span {
+    color: #5c7eee;
+}
+
+.menuSmallItem_half a:hover {
+    color: #5c7eee;
+}
+
+.btnBuySmall {
+    width: 100%;
+}
+
+
+/* custom */
+
+.menuList-small
+/* end custom */
+
+.btnBuySmall {
+    display: block;
+    width: 100%;
+    padding: 0.8125rem 1.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 1.0625rem;
+    color: #fff;
+    background-color: #335eea;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btnBuySmall:hover {
+    background-color: #1746e0;
+    transform: translateY(-8px);
+}
+
+
+/* End menuList-small */
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {

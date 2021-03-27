@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 
-<body>
+<body menu="false">
     <nav>
         <div class="nav container">
             <div class="logo">
@@ -268,20 +268,171 @@
                 </div>
                 <!-- End menuList -->
             </div>
+
+
             <div class="btnBuy">
                 <a href="#"> Buy now</a>
             </div>
             <!-- EndNav large laptops and desktops -->
 
             <!-- Nav small devices (phones, 600px and down) -->
+
             <div class="btnNavWrapper">
-                <div class="btnNavIcon">
+                <div class="btnNavIcon" id='btnNavIconId'>
                     <!-- <div></div>
                     <div></div>
                     <div></div> -->
                 </div>
-
             </div>
+
+            <div class="menuList-small box-shadow" id="menuListSmallId">
+                <div class="btnCloseMenu" id="btnCloseMenuId">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/></svg>
+                </div>
+
+                <div class="menuSmallItem row pt-2 pl-1 pr-1">
+                    <div class="menuSmallItem_title">
+                        <h1>Landings</h1>
+                    </div>
+
+                    <div class="menuSmallItem_half">
+                        <h2>SERVICES</h2>
+                        <a href="#">Coworking</a>
+                        <a href="#">Rental</a>
+                        <a href="#">Job Listing</a>
+
+                        <h2>SERVICES</h2>
+                        <a href="#">Desktop</a>
+                        <a href="#">Mobile</a>
+                    </div>
+
+                    <div class="menuSmallItem_half">
+                        <h2>WEBS</h2>
+                        <a href="#">Basic</a>
+                        <a href="#">StartUp</a>
+                        <a href="#">Enterprice</a>
+                        <a href="#">Service</a>
+                        <a href="#">Cloud Hosting</a>
+                        <a href="#">Agency</a>
+                        <a href="#">Framework (<span>New</span>)</a>
+                    </div>
+
+                </div>
+
+                <div class="menuSmallItem row pt-2 pl-1 pr-1">
+                    <div class="menuSmallItem_title">
+                        <h1>Pages</h1>
+                    </div>
+
+                    <div class="menuSmallItem_half">
+                        <h2>CAREER</h2>
+                        <a href="#"> Listing</a>
+                        <a href="#">Qpening</a>
+
+
+                        <h2>COMPANY</h2>
+                        <a href="#">About</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Terms</a>
+
+                        <h2>HELP CENTER</h2>
+                        <a href="#">Overview</a>
+                        <a href="#">Article</a>
+                        <a href="#">Terms</a>
+
+                        <h2>Contact</h2>
+                        <a href="#">Basic</a>
+                        <a href="#">Cover</a>
+                    </div>
+
+                    <div class="menuSmallItem_half">
+                        <h2>Blogs</h2>
+                        <a href="#">Rich View</a>
+                        <a href="#">Article</a>
+                        <a href="#">Showcase</a>
+                        <a href="#">Search</a>
+
+                        <h2>Portfolio</h2>
+                        <a href="#">Masonry</a>
+                        <a href="#">Grid Rows</a>
+                        <a href="#">Parallax</a>
+                        <a href="#">Case Study</a>
+                        <a href="#">SideBar</a>
+                        <a href="#">Sidebar: Fluid</a>
+                        <a href="#">Basic Grid</a>
+
+                    </div>
+
+                </div>
+
+                <div class="menuSmallItem row pt-2 pl-1 pr-1">
+                    <div class="menuSmallItem_title">
+                        <h1>Landings</h1>
+                    </div>
+
+                    <div class="menuSmallItem_half">
+                        <h2>Account</h2>
+                        <a href="#">Setting</a>
+                        <a href="#">Sign In</a>
+                        <a href="#">Sign Up</a>
+                        <a href="#">Password Reset</a>
+                        <a href="#">Error</a>
+
+
+                    </div>
+
+
+                </div>
+                <div class="menuSmallItem row pt-2 pl-1 pr-1">
+                    <div class="menuSmallItem_title ">
+                        <h1>Documentation</h1>
+                    </div>
+                    <!-- <div class="row pt-2 pl-1 pr-1"> -->
+                    <div class="col-12 documentationItem_child mb-1 pt-2">
+                        <div class="menuItemIcon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"></path><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"></rect><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"></rect></g></svg>
+                        </div>
+                        <div class="menuItemIconLink">
+                            <h6> Documentation</h6>
+                            <p>Customizing and building</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 documentationItem_child mb-1">
+                        <div class="menuItemIcon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><rect fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"></rect><path d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z" fill="#335EEA" opacity=".3"></path></g></svg>
+                        </div>
+                        <div class="menuItemIconLink">
+                            <h6> Components</h6>
+                            <p>Full list of components</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 documentationItem_child  mb-1">
+                        <div class="menuItemIcon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"></path><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"></rect><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"></rect></g></svg>
+                        </div>
+                        <div class="menuItemIconLink">
+                            <h6> Changelog</h6>
+                            <p> Keep track of changes</p>
+                        </div>
+                        <div class="menuItemIconVer">
+                            <span>1.2.2</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <a class="btn btnBuySmall" href="#" target="_blank">
+                            Buy now
+                          </a>
+                    </div>
+                    <!-- </div> -->
+
+
+                </div>
+            </div>
+
             <!-- EndNav small devices (phones, 600px and down) -->
         </div>
     </nav>
@@ -904,7 +1055,7 @@
     </div>
     <!-- END FOOTER -->
 
-
+    <script src="custom.js"></script>
 </body>
 
 </html>
