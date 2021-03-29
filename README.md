@@ -11,7 +11,7 @@ Trang code : Chưa có Demo
 - 25/3 (8h) : UI PRICING 99% (Bug) , Done Ui FOOTER ( responsive done)
 - 26/3 (2h) : Ui menu small devices (50%), Js turn off menu
 - Off
-- 29/3 (8h) : Ui menu small devices (100%) -> Js effect: hide and display menuDown; Done Validate Form About; Slider (50%)
+- 29/3 (8h) : Ui menu small devices (100%) -> Js effect: hide and display menuDown; Done Validate Form About; Done Slide
 
 # Problem :
 
