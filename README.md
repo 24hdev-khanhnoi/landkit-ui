@@ -6,6 +6,9 @@
 - 23/3 : Done UI FEATURES, Brands, About, Testimonial ( responsive done)
 - 24/3 : Fix Bugs UI, Done UI STATS , UI PRICING (10%)
 - 25/3 : UI PRICING 99% (Bug) , Done Ui FOOTER ( responsive done)
+- 26/3 : Ui menu small devices (50%), Js turn off menu
+
+- 29/3 : Ui menu small devices (100%) -> Js effect: hide and display menuDown
 
 # Problem :
 

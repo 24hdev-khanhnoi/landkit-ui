@@ -1,10 +1,12 @@
 let btnNavIconElm = document.querySelector("#btnNavIconId");
 let bodyElm = document.querySelector("body");
 let menuListSmallElm = document.querySelector("#menuListSmallId");
-let menuListSmallChildElm = document.querySelector("#menuListSmallId *");
+// let menuListSmallChildElm = document.querySelector("#menuListSmallId *");
 let btnCloseMenuElm = document.querySelector("#btnCloseMenuId");
-
-menuListSmallChildElm.style.color = "red";
+let itemMenuInSmallDevicesElms = document.querySelectorAll(
+  ".menuSmallItem_full_linkWrapper"
+);
+console.log("menuSmallItem_full_linkWrapper", itemMenuInSmallDevicesElms);
 
 // event
 
@@ -64,4 +66,50 @@ btnCloseMenuElm.addEventListener("click", () => {
 
 // --Endhandle icon close menu
 
+// handle item menu in small devices
+
+for (let i = 0; i < itemMenuInSmallDevicesElms.length; i++) {
+  itemMenuInSmallDevicesElms[i].addEventListener("click", (e) => {
+    console.log(i);
+    let checkStatus = itemMenuInSmallDevicesElms[i].getAttribute("status");
+    if (checkStatus === "default") {
+      changeItemMenuSmall(i, "down");
+      // itemMenuInSmallDevicesElms[i].classList.add(
+      //   "menuSmallItem_full_iconWrapper-down"
+      // );
+      // itemMenuInSmallDevicesElms[i].setAttribute("status", "down");
+    } else {
+      changeItemMenuSmall(i, "default");
+      // itemMenuInSmallDevicesElms[i].classList.remove(
+      //   "menuSmallItem_full_iconWrapper-down"
+      // );
+      // itemMenuInSmallDevicesElms[i].setAttribute("status", "default");
+    }
+  });
+
+  const changeItemMenuSmall = (index, statusString) => {
+    if (statusString === "down") {
+      itemMenuInSmallDevicesElms[i].classList.add(
+        "menuSmallItem_full_iconWrapper-down"
+      );
+      itemMenuInSmallDevicesElms[i].setAttribute("status", "down");
+      //rest
+      for (let i = 0; i < itemMenuInSmallDevicesElms.length; i++) {
+        if (i !== index) {
+          itemMenuInSmallDevicesElms[i].classList.remove(
+            "menuSmallItem_full_iconWrapper-down"
+          );
+          itemMenuInSmallDevicesElms[i].setAttribute("status", "default");
+        }
+      }
+    } else {
+      itemMenuInSmallDevicesElms[i].classList.remove(
+        "menuSmallItem_full_iconWrapper-down"
+      );
+      itemMenuInSmallDevicesElms[i].setAttribute("status", "default");
+    }
+  };
+
+  // End handle item menu in small devices
+}
 // end event
