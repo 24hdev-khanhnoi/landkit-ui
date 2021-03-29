@@ -2,20 +2,20 @@
 
 # Report:
 
-- 22/3 : Done UI HeaderNav ( responsive done) and Done UI Banner ( responsive done) and FEATURES (10%)
-- 23/3 : Done UI FEATURES, Brands, About, Testimonial ( responsive done)
-- 24/3 : Fix Bugs UI, Done UI STATS , UI PRICING (10%)
-- 25/3 : UI PRICING 99% (Bug) , Done Ui FOOTER ( responsive done)
-- 26/3 : Ui menu small devices (50%), Js turn off menu
+- 22/3 (8h) : Done UI HeaderNav ( responsive done) and Done UI Banner ( responsive done) and FEATURES (10%)
+- 23/3 (8h) : Done UI FEATURES, Brands, About, Testimonial ( responsive done)
+- 24/3 (8h) : Fix Bugs UI, Done UI STATS , UI PRICING (10%)
+- 25/3 (8h) : UI PRICING 99% (Bug) , Done Ui FOOTER ( responsive done)
+- 26/3 (2h) : Ui menu small devices (50%), Js turn off menu
 
-- 29/3 : Ui menu small devices (100%) -> Js effect: hide and display menuDown
+- 29/3 (8h) : Ui menu small devices (100%) -> Js effect: hide and display menuDown
 
 # Problem :
 
-- Font that looks like the original was not found
+- Font that looks like the original was not found --> used font of Google :v
 - Have not done the label effect of the form, not yet
 - Have 1 bug in About UI (aboutBelow_img) --> (Fix Done)
 - Have 1 big bug Bg TestimonialBelow --> (Fix done)
-- Have 1 hard bug Bg PRICING
+- Have 1 hard bug Bg PRICING --> (Fix done)
 
 p/s: Ảnh trang ở dạng link gốc

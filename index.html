@@ -649,24 +649,29 @@
                 <div class="aboutForm box-shadow border-left border-right">
                     <div class="aboutForm_img">
                     </div>
-                    <div class="aboutForm_types">
+                    <!-- <div class="aboutForm_types" id="formAboutId"> -->
+                    <form class="aboutForm_types" id="formAboutId">
                         <div class="form-label-group">
                             <input name='name' type="text" class="form-control form-control-flush" placeholder="Name">
                             <!-- <label for="cardName">Name</label> -->
+                            <p id='wrongNameId'></p>
                         </div>
                         <div class="form-label-group">
                             <input name='email' type="text" class="form-control form-control-flush" placeholder="Email">
                             <!-- <label for="cardName">Name</label> -->
+                            <p id='wrongEmailId'></p>
                         </div>
                         <div class="form-label-group">
                             <input name='password' type="password" class="form-control form-control-flush" placeholder="Password">
                             <!-- <label for="cardName">Name</label> -->
+                            <p id='wrongPassId'></p>
                         </div>
                         <div class="aboutForm_types_btn">
-                            <button class="btn">
+                            <button class="btn" id="btnFormAboutId" type="submit">
                                 Download a sample
                             </button>
-                        </div>
+                            <!-- </div> -->
+                    </form>
                     </div>
 
 

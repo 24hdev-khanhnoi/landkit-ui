@@ -6,7 +6,15 @@ let btnCloseMenuElm = document.querySelector("#btnCloseMenuId");
 let itemMenuInSmallDevicesElms = document.querySelectorAll(
   ".menuSmallItem_full_linkWrapper"
 );
-console.log("menuSmallItem_full_linkWrapper", itemMenuInSmallDevicesElms);
+
+let btnFormAboutElm = document.querySelector("#btnFormAboutId");
+let formAboutElm = document.querySelector("#formAboutId");
+
+let wrongEmailElm = document.querySelector("#wrongEmailId");
+let wrongNameElm = document.querySelector("#wrongNameId");
+let wrongPassElm = document.querySelector("#wrongPassId");
+
+// console.log("menuSmallItem_full_linkWrapper", itemMenuInSmallDevicesElms);
 
 // event
 
@@ -70,7 +78,7 @@ btnCloseMenuElm.addEventListener("click", () => {
 
 for (let i = 0; i < itemMenuInSmallDevicesElms.length; i++) {
   itemMenuInSmallDevicesElms[i].addEventListener("click", (e) => {
-    console.log(i);
+    // console.log(i);
     let checkStatus = itemMenuInSmallDevicesElms[i].getAttribute("status");
     if (checkStatus === "default") {
       changeItemMenuSmall(i, "down");
@@ -109,7 +117,64 @@ for (let i = 0; i < itemMenuInSmallDevicesElms.length; i++) {
       itemMenuInSmallDevicesElms[i].setAttribute("status", "default");
     }
   };
-
-  // End handle item menu in small devices
 }
+
+// End handle item menu in small devices
+
+// Form Event
+
+// btnFormAboutElm.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   console.log("hanhle Btn Submit Form");
+// });
+
+formAboutId.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+  // pointer-events: none;
+  console.log("--- Form Submit ---");
+  let name = e.target.name.value;
+  let email = e.target.email.value;
+  let password = e.target.password.value;
+  let statusDone = 0;
+
+  if (name === "") {
+    wrongNameElm.innerHTML = "Name is required !!";
+  } else {
+    wrongNameElm.innerHTML = "";
+    statusDone++;
+  }
+
+  if (email === "") {
+    wrongEmailElm.innerHTML = "Email is required !!";
+  } else if (!validateEmail(email)) {
+    wrongEmailElm.innerHTML = "Email is not in the correct format";
+  } else {
+    wrongEmailElm.innerHTML = "";
+    statusDone++;
+  }
+
+  if (password === "") {
+    wrongPassElm.innerHTML = "Password is required !!";
+  } else if (password.length < 8)
+    wrongPassElm.innerHTML = "Password must be over 8 characters";
+  else {
+    wrongPassElm.innerHTML = "";
+    statusDone++;
+  }
+
+  if (statusDone === 3) {
+    console.log(name, email, password);
+  }
+
+  // btnFormAboutElm.style.pointerEvents = "none";
+  // setTimeout(() => {
+  //   btnFormAboutElm.style.pointerEvents = "";
+  // }, 400);
+});
+// End Form Event
 // end event

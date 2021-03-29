@@ -56,6 +56,11 @@
     background-color: #389e7f;
 }
 
+.aboutForm_types p {
+    color: red !important;
+    font-size: 0.9em;
+}
+
 .aboutInfo {
     padding-top: 20%;
 }

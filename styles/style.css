@@ -179,6 +179,10 @@ a {
     color: #1746e0;
 }
 
+.text-red {
+    color: red;
+}
+
 .bg-white {
     background: #fff;
 }
