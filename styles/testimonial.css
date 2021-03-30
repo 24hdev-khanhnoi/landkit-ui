@@ -76,7 +76,32 @@
 
 .testimonialBelow_img {
     width: 50%;
+    transition: 0.2s;
+    position: relative;
+    /* width: 100%; */
+    min-height: 300px;
 }
+
+
+/* .testimonialBelow_img-effect {
+    opacity: 0 !important;
+    position: relative;
+}
+
+.testimonialBelow_img-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 1;
+    border-radius: 10px;
+    border-bottom-right-radius: 110px 250px;
+    border-top-right-radius: 27px 130px;
+    z-index: 10000;
+} */
 
 .testimonialBelow_img a {
     display: block;
@@ -89,6 +114,16 @@
     border-radius: 10px;
     border-bottom-right-radius: 110px 250px;
     border-top-right-radius: 27px 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 900;
+}
+
+.bg-selected {
+    opacity: 1 !important;
 }
 
 .testimonialBelow_content {

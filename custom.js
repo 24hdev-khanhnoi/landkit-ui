@@ -16,7 +16,10 @@ let wrongPassElm = document.querySelector("#wrongPassId");
 
 let prevNextLeftElm = document.querySelector("#prevNextLeftId");
 let prevNextRightElm = document.querySelector("#prevNextRightId");
+// let bgSliderWrapperElm = document.querySelector("#testimonialBelowImgId");
 let bgSliceElm = document.querySelector(".testimonialBelow_img a");
+let bgSliceWrappterElm = document.querySelector(".testimonialBelow_img");
+// console.log(bgSliceElm2);
 
 let sliceWrapperElm = document.querySelector("#sliceWrapperId");
 let sliderSeclected = 0;
@@ -80,6 +83,9 @@ window.onload = (event) => {
   console.log("totalSlider", totalSlider);
 
   let htmlText = "";
+  //bg
+  let htmlBgText = "";
+
   for (let i = 0; i < totalSlider; i++) {
     htmlText += `
     <div key=${mockDataSlice[i].id} class="cardTestimonial noselect ${
@@ -94,11 +100,18 @@ window.onload = (event) => {
     <span>${mockDataSlice[i].info}</span>
 </div>
     `;
+
+    htmlBgText += `
+    <a  key=${mockDataSlice[i].id} class="${
+      i === sliderSeclected ? "bg-selected" : ""
+    }" href="#" style='background-image: url("${mockDataSlice[i].image}")'></a>
+    `;
   }
 
   sliceWrapperElm.innerHTML = htmlText;
+  bgSliceWrappterElm.innerHTML = htmlBgText;
 
-  bgSliceElm.style.backgroundImage = `url(${mockDataSlice[0].image})`;
+  // bgSliceElm.style.backgroundImage = `url(${mockDataSlice[0].image})`;
 };
 
 // console.log("menuSmallItem_full_linkWrapper", itemMenuInSmallDevicesElms);
@@ -271,29 +284,38 @@ prevNextRightElm.addEventListener("click", () => {
   // locationSlider -= 100;
   // sliceWrapperElm.style.transform = `translateX(${locationSlider}%)`;
   console.log("-->");
+  //Old
   console.log("Selected Old:", sliderSeclected);
   let selectedOldElm = document.querySelector(
     `.cardTestimonial[key='${sliderSeclected}']`
   );
+  let selectedOldBgElm = document.querySelector(
+    `.testimonialBelow_img a[key='${sliderSeclected}']`
+  );
+  //Change Value
   sliderSeclected = (sliderSeclected + 1) % totalSlicer;
   // console.log(sliderSeclected);
+  //New
   console.log("Selected New:", sliderSeclected);
   let selectedNewElm = document.querySelector(
     `.cardTestimonial[key='${sliderSeclected}']`
+  );
+  let selectedNewBgElm = document.querySelector(
+    `.testimonialBelow_img a[key='${sliderSeclected}']`
   );
   console.log(selectedOldElm);
   console.log(selectedNewElm);
 
   selectedOldElm.classList.remove("cardTestimonial-selected");
   selectedOldElm.classList.add("cardTestimonial-rightOrigin");
+  selectedOldBgElm.classList.remove("bg-selected");
   setTimeout(() => {
     selectedOldElm.classList.remove("cardTestimonial-rightOrigin");
   }, 500);
-
   selectedNewElm.classList.add("cardTestimonial-selected");
+  selectedNewBgElm.classList.add("bg-selected");
 
   //bg
-  bgSliceElm.style.backgroundImage = `url(${mockDataSlice[sliderSeclected].image})`;
 });
 
 prevNextLeftElm.addEventListener("click", () => {
@@ -302,14 +324,23 @@ prevNextLeftElm.addEventListener("click", () => {
   // sliceWrapperElm.style.transform = `translateX(${locationSlider}%)`;
   console.log("<--");
   console.log("Selected Old:", sliderSeclected);
+  //Old
   let selectedOldElm = document.querySelector(
     `.cardTestimonial[key='${sliderSeclected}']`
   );
+  let selectedOldBgElm = document.querySelector(
+    `.testimonialBelow_img a[key='${sliderSeclected}']`
+  );
+  //Change Value
   sliderSeclected = (sliderSeclected + totalSlicer - 1) % totalSlicer;
   // console.log(sliderSeclected);
+  //New
   console.log("Selected New:", sliderSeclected);
   let selectedNewElm = document.querySelector(
     `.cardTestimonial[key='${sliderSeclected}']`
+  );
+  let selectedNewBgElm = document.querySelector(
+    `.testimonialBelow_img a[key='${sliderSeclected}']`
   );
   console.log(selectedOldElm);
   console.log(selectedNewElm);
@@ -321,13 +352,12 @@ prevNextLeftElm.addEventListener("click", () => {
   }, 500);
 
   selectedNewElm.classList.add("cardTestimonial-selectedDelay");
+  selectedOldBgElm.classList.remove("bg-selected");
   setTimeout(() => {
     selectedNewElm.classList.remove("cardTestimonial-selectedDelay");
     selectedNewElm.classList.add("cardTestimonial-selected");
   }, 0);
-  // selectedNewElm.classList.add("cardTestimonial-selected");
-  //bg
-  bgSliceElm.style.backgroundImage = `url(${mockDataSlice[sliderSeclected].image})`;
+  selectedNewBgElm.classList.add("bg-selected");
 });
 // end slider
 
