@@ -1,7 +1,7 @@
 ## Bai 1 - Training 24hDev - Khánh Nòi
 
-Trang mẫu : [landkit](https://landkit.goodthemes.co/).
-Trang code : Chưa có Demo
+- Trang mẫu : [landkit](https://landkit.goodthemes.co/).
+- Trang code : https://landkit-kn.netlify.app/
 
 # Report:
 
