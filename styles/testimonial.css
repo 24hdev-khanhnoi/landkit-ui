@@ -138,6 +138,8 @@
     height: 100%;
     transition: 0.5s;
     position: relative;
+    /* cursor: grabbing; */
+    cursor: grab;
 }
 
 .cardTestimonial_prevNext {
@@ -197,7 +199,8 @@
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    cursor: grab;
+    /* cursor: grabbing; */
+    /* cursor: grab; */
     height: 100%;
     width: 100%;
     /* slider */

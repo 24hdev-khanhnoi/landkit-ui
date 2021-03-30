@@ -279,7 +279,7 @@ formAboutId.addEventListener("submit", (e) => {
 // End Form Event
 
 // slider
-prevNextRightElm.addEventListener("click", () => {
+const right = () => {
   // let numberSlider = document.querySelectorAll("cardTestimonial");
   // locationSlider -= 100;
   // sliceWrapperElm.style.transform = `translateX(${locationSlider}%)`;
@@ -316,9 +316,9 @@ prevNextRightElm.addEventListener("click", () => {
   selectedNewBgElm.classList.add("bg-selected");
 
   //bg
-});
+};
 
-prevNextLeftElm.addEventListener("click", () => {
+const left = () => {
   // let numberSlider = document.querySelectorAll("cardTestimonial");
   // locationSlider += 100;
   // sliceWrapperElm.style.transform = `translateX(${locationSlider}%)`;
@@ -358,7 +358,84 @@ prevNextLeftElm.addEventListener("click", () => {
     selectedNewElm.classList.add("cardTestimonial-selected");
   }, 0);
   selectedNewBgElm.classList.add("bg-selected");
+};
+prevNextRightElm.addEventListener("click", () => {
+  right();
 });
+
+prevNextLeftElm.addEventListener("click", () => {
+  left();
+});
+
+//drag, grab slide
+var dragged;
+sliceWrapperElm.addEventListener(
+  "drag",
+  function (event) {
+    console.log("-------drag--------------");
+  },
+  false
+);
+
+sliceWrapperElm.addEventListener(
+  "dragstart",
+  function (event) {
+    // store a ref. on the dragged elem
+    // dragged = event.target;
+    // make it half transparent
+    // event.target.style.opacity = 0.5;
+    console.log("-------dragstart--------------");
+  },
+  false
+);
+
+(function () {
+  let mouseTimer;
+  let xOld = 0,
+    yOld = 0,
+    xNew = 0,
+    yNew = 0;
+  function mouseDown(e) {
+    console.log("--mouseDown");
+    // mouseUp();
+    xOld = e.x;
+    yOld = e.y;
+    console.log("xOld:", xOld);
+    console.log("yOld:", yOld);
+    // mouseTimer = window.setTimeout(execMouseDown, 10); //set timeout to fire in 0.01 seconds when the user presses mouse button down
+    execMouseDown();
+  }
+
+  function mouseUp(e) {
+    console.log("--mouseUp");
+    xNew = e.x;
+    yNew = e.y;
+    console.log("xNew:", xNew);
+    console.log("yNew:", yNew);
+    if (xNew - xOld > 0) {
+      left();
+    } else if (xNew - xOld < 0) {
+      right();
+    } else {
+      console.log("-nothing-");
+    }
+    // if (mouseTimer) window.clearTimeout(mouseTimer); //cancel timer when mouse button is released
+    // sliceWrapperElm.style.backgroundColor = "#FFFFFF";
+    sliceWrapperElm.style.cursor = "grab";
+  }
+
+  function execMouseDown() {
+    console.log("execMouseDown");
+    // sliceWrapperElm.style.backgroundColor = "#CFCF00";
+    sliceWrapperElm.style.cursor = "grabbing";
+  }
+
+  // var div = document.getElementById("bam");
+  sliceWrapperElm.addEventListener("mousedown", mouseDown);
+  sliceWrapperElm.addEventListener("mouseup", mouseUp); //listen for mouse up event on body, not just the element you originally clicked on
+})();
+
+//End drag, grab slide
 // end slider
 
 // end event

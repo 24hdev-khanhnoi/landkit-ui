@@ -11,7 +11,7 @@
 - 25/3 (8h) : UI PRICING 99% (Bug) , Done Ui FOOTER ( responsive done)
 - 26/3 (2h) : Ui menu small devices (50%), Js turn off menu
 - Off
-- 29/3 (8h) : Ui menu small devices (100%) -> Js effect: hide and display menuDown; Done Validate Form About; Slider (80%)
+- 29/3 (8h) : Ui menu small devices (100%) -> Js effect: hide and display menuDown; Done Validate Form About; Done Slider
 
 # Problem :
 
@@ -20,5 +20,6 @@
 - Have 1 bug in About UI (aboutBelow_img) --> (Fix Done)
 - Have 1 big bug Bg TestimonialBelow --> (Fix done)
 - Have 1 hard bug Bg PRICING --> (Fix done)
+- Only do one effect instance of Slice (Grab, Grabbing,....)
 
 p/s: Ảnh trang ở dạng link gốc
